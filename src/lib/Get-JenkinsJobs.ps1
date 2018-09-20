@@ -24,11 +24,11 @@ Function Get-JenkinsJobs {
         Write-Verbose "Recursive call on Folder: $Folder/$PSItem"
         if($Folder){
             Get-JenkinsFolderList -Uri $JenkinsServer -Credential $Credential -Folder $Folder | ForEach-Object {
-                Get-JenkinsJobs -JenkinsServer $JenkinsServer -Credential $Credential -Folder "$Folder/$PSItem"
+                Get-JenkinsJobs -Uri $JenkinsServer -Credential $Credential -Folder "$Folder/$PSItem"
             }
         }else{
             Get-JenkinsFolderList -Uri $JenkinsServer -Credential $Credential | ForEach-Object {
-                Get-JenkinsJobs -JenkinsServer $JenkinsServer -Credential $Credential -Folder $PSItem
+                Get-JenkinsJobs -Uri $JenkinsServer -Credential $Credential -Folder $PSItem
             }
         }
     }
