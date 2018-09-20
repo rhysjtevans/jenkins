@@ -40,6 +40,7 @@ folder.
 - Get-JenkinsObject: Get a list of objects in a Jenkins master server.
 - Get-JenkinsJobList: Get a list of jobs in a Jenkins master server.
 - Get-JenkinsJob: Get a Jenkins Job Definition.
+- Get-JenkinsJobs: Get all Jenkins Job definitions from a folder (incl. recursively).
 - Set-JenkinsJob: Set a Jenkins Job definition.
 - Test-JenkinsJob: Determines if a Jenkins Job exists.
 - New-JenkinsJob: Create a new Jenkins Job.
