@@ -9,6 +9,7 @@ Function Get-JenkinsJobs {
             $Uri,
         
         [Parameter()]
+            [ValidateNotNullOrEmpty()]
             [String]
             $Folder,
 
